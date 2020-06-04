@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title %}BlackCatのTopList-首页{% endblock %}
+
+{% block content %}
+  <div class="main-container">
+    <div class="padding">
+      <ol class="breadcrumb">
+        <li class="active">首页</li>
+      </ol>
+      <!--搜索引擎-->
+      <div class="box">
+        <div class="box-inner">
+          <div class="logo" style="margin-top: 130px;"><img src="/static/images/index-images/google.png" alt="google logo"></div>
+          <form class="search" method="get" action="http://www.google.com/search" target="_blank">
+            <input name="q" size="40" maxlength="255" type="text"/>
+          </form>
+          <div class="buttons" style="margin-bottom: 130px;">
+            <span><a href="https://translate.google.cn/" style="color:#333333" target="_blank">Google翻译</a></span>
+            <span><a href="https://scholar.google.com/" style="color:#333333" target="_blank">Google学术</a></span>
+          </div>
+        </div>
+      </div><!--box end-->
+    </div>
+  </div>
+{% endblock content %}
+

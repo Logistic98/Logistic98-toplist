@@ -1,0 +1,120 @@
+{% extends "base.html" %}
+
+{% block title %}BlackCatのTopList-网站导航{% endblock %}
+
+{% block content %}
+  <div class="main-container">
+    <div class="padding">
+      <ol class="breadcrumb">
+        <li><a href="/">首页</a></li>
+        <li class="active">网站导航</li>
+      </ol>
+      <!--网站导航-->
+      <div class="box">
+        <div class="box-inner">
+          <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingOne">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    常用网站
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body">
+                  个人网站：<a href="http://www.blackcat.monster/" target="_blank">BlackCatのWordpress</a> |
+                           <a href="https://www.blackcat.monster/tool/" target="_blank">BlackCatのToolbox</a> |
+                           <a href="http://192.243.119.55/" target="_blank">BlackCatのNextcloud</a> |
+                           <a href="https://chevereto.monster/" target="_blank">BlackCatのChevereto</a>
+                  <hr>
+                  工作学习：<a href="https://www.google.com/" target="_blank">Google</a> |
+                           <a href="https://translate.google.cn/" target="_blank">Google Translate</a> |
+                           <a href="https://mail.google.com/" target="_blank">Gmail</a> |
+                           <a href="https://drive.google.com/" target="_blank">Google Drive</a> |
+                           <a href="https://scholar.google.com/" target="_blank">Google Scholar</a> |
+                           <a href="https://images.google.com/" target="_blank">Google Images</a> |
+                           <a href="https://github.com" target="_blank">Github</a> |
+                           <a href="https://stackoverflow.com" target="_blank">Stack Overflow</a> |
+                           <a href="https://leetcode-cn.com/problemset/all/" target="_blank">LeetCode</a> |
+                           <a href="https://www.bilibili.com" target="_blank">Bilibili</a> |
+                           <a href="https://www.youtube.com" target="_blank">YouTube</a> |
+                           <a href="https://www.pixiv.net" target="_blank">Pixiv</a>
+                  <hr>
+                  生活娱乐：<a href="https://www.zymk.cn" target="_blank">Zhiyin</a> |
+                           <a href="https://music.163.com" target="_blank">Cloudmusic</a> |
+                           <a href="https://www.zhihu.com/" target="_blank">Zhihu</a> |
+                           <a href="https://www.csdn.net" target="_blank">CSDN</a> |
+                           <a href="https://twitter.com/home" target="_blank">Twitter</a> |
+                           <a href="https://github.com/521xueweihan/HelloGitHub" target="_blank">HelloGithub</a> |
+                           <a href="https://github.com/kon9chunkit/GitHub-Chinese-Top-Charts" target="_blank">GitHub-Top</a> |
+                           <a href="https://bwh8.net/cart.php/" target="_blank">Bandwagon</a> |
+                           <a href="https://www.namesilo.com/" target="_blank">NameSilo</a> |
+                           <a href="https://www.apple.com/cn-k12/shop" target="_blank">Apple edu store</a> |
+                           <a href="https://www.raspberrypi.org/" target="_blank">Raspberry Pi</a>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingTwo">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                    在线工具
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingTwo">
+                <div class="panel-body">
+                  图片处理：<a href="https://www.remove.bg" target="_blank">一键抠图</a> |
+                           <a href="https://redacted.app/" target="_blank">图片打码</a> |
+                           <a href="https://www.apowersoft.cn/image-watermark-remover" target="_blank">图片去水印</a> |
+                           <a href="https://www.asqql.com/tpzsh/" target="_blank">图片转手绘</a> |
+                           <a href="https://www.bgconverter.com" target="_blank">证件照换底色</a> |
+                           <a href="https://tinypng.com" target="_blank">图片压缩</a> |
+                           <a href="https://spacekid.me/halftone-qr-code-generator/" target="_blank">图片二维码生成器</a>
+                  <hr>
+                  平台运营：<a href="https://www.logosc.cn" target="_blank">Logo设计</a> |
+                           <a href="http://yciyun.com/" target="_blank">词云生成</a> |
+                           <a href="https://www.arkie.cn/library" target="_blank">海报设计</a> |
+                           <a href="http://www.15um.com/tools/weixin_v.php" target="_blank">公众号视频下载器</a> |
+                           <a href="https://www.chuangkit.com/templatecenter/wxtu.html" target="_blank">公众号配图</a> |
+                           <a href="https://edit.newrank.cn" target="_blank">公众号编辑器</a> |
+                           <a href="https://www.ipip.net/ip.html" target="_blank">IP地址查询</a> |
+                           <a href="https://gtmetrix.com/" target="_blank">网站性能优化</a>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingThree">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                    资源检索
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseThree" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingThree">
+                <div class="panel-body">
+                  插件脚本：<a href="https://chrome.google.com/webstore/category/extensions/" target="_blank">Chrome Plugin</a> +
+                           <a href="https://chrome-extension-downloader.com/" target="_blank">Chrome Plugin Download</a> |
+                           <a href="https://greasyfork.org/zh-CN/" target="_blank">Greasy Fork</a> |
+                           <a href="https://sharecuts.cn" target="_blank">iOS Shortcut</a> |
+                           <a href="https://visualskins.com/" target="_blank">Rainmeter Skins</a> +
+                           <a href="https://www.deviantart.com/rainmeter/gallery/?set=23941137&offset=24" target="_blank">DeviantArt</a>
+                  <hr>
+                  搜索平台：<a href="https://zh.wikihow.com/" target="_blank">WikiHow</a> |
+                           <a href="https://www.pexels.com/@pixabay" target="_blank">Pixabay</a> +
+                           <a href="https://www.wallpaperup.com" target="_blank">Wallpaper</a> |
+                           <a href="https://ieeexplore.ieee.org/Xplore/home.jsp" target="_blank">IEEE</a> +
+                           <a href="https://sci-hub.tw" target="_blank">SUI-HUB</a> |
+                           <a href="https://www.cnki.net" target="_blank">CNKI</a> |
+                           <a href="https://www.jiumodiary.com" target="_blank">Jiumo</a> |
+                           <a href="https://datahub.io" target="_blank">DataHub</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!--box end-->
+    </div>
+  </div>
+{% endblock content %}

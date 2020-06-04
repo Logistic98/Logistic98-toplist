@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+{% block title %}BlackCatのTopList-微博头条{% endblock %}
+
+{% block content %}
+  <div class="main-container">
+    <div class="padding">
+      <ol class="breadcrumb">
+        <li><a href="/">首页</a></li>
+        <li class="active">微博头条</li>
+      </ol>
+      <div class="box">
+        <div class="heading">
+          <img src="/static/images/weibo-images/weibo.png" alt="weibo" height="40" class="title" style="margin:10px 0px">
+        </div>
+        <!--页面主题--右侧内容--微博头条-->
+        <div class="box-inner">
+          <!--页面主题--右侧内容--微博头条--内容主体-->
+          <div class="box">
+            {% for item in spotList %}
+              <div class="box" style="float:left;width:620px">
+                <a href="{{ item.address }}" target="_blank">{{ item.content }}</a></li>
+              </div>
+              <div class="visible-lg"><!--只在超过1200px的大屏幕桌面显示-->
+                <div class="box" style="float:left;width:170px;">
+                  {{ item.author }}
+                </div>
+                <div class="box" style="float:left;width:170px;">
+                  {{ item.publishTime }}
+                </div>
+                <div class="box" style="float:left;width:80px;">
+                  <img src="/static/images/weibo-images/approve.png" alt="approve" height="16">{{ item.approve }}
+                </div>
+                <div class="box" style="float:left;width:80px;">
+                  <img src="/static/images/weibo-images/comment.png" alt="comment" height="16">{{ item.comment }}
+                </div>
+                <div class="box" style="width:80px;">
+                  <img src="/static/images/weibo-images/repost.png" alt="repost" height="16">{{ item.repost }}
+                </div>
+              </div>
+            {% endfor %}
+          </div>
+          <!--页面主题--右侧内容--微博头条--动态分页-->
+          <nav class="text-center">
+            <ul class="pagination">
+              {% for index in spotList.paginator.page_range %}
+                {% if index == spotList.number %}
+                  <li class="active"><a>{{ index }}</a></li>
+                {% else %}
+                  <li><a href="/weibodetail/{{ index }}/">{{ index }}</a></li>
+                {% endif %}
+              {% endfor %}
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock content %}

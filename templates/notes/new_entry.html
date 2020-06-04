@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block title %}BlackCatのTopList-知识碎片{% endblock %}
+
+{% block content %}
+  <div class="main-container">
+    <div class="padding">
+      <ol class="breadcrumb">
+        <li><a href="/">首页</a></li>
+        <li><a href="http://127.0.0.1:8000/notes/topics/">知识碎片</a></li>
+        <li class="active">添加条目</li>
+      </ol>
+      <div class="box">
+        <div class="heading">
+          <h3 class="title">添加条目<span class="box-toggle"><i class="fa fa-chevron-up"></i></span></h3>
+        </div>
+        <div class="box-inner">
+          <h4><a href="/notes/topics/{{topic.id}}">{{ topic }}</a> <small>添加条目</small></h4><hr>
+          <form action="/notes/new_entry/{{topic.id}}" method='post'>
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button name="submit" class="btn btn-primary" style="width:170px">保存更改</button>
+          </form>
+        </div>
+      </div><!--box end-->
+    </div>
+  </div>
+{% endblock content %}

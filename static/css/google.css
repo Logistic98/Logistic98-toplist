@@ -1,0 +1,72 @@
+* {
+    /* 当前盒模型为IE盒模型 */
+    box-sizing: border-box;
+}
+
+.logo {
+    width: 295px;
+    height: 100px;
+    margin: 100px auto 0 auto;
+    background: no-repeat;
+    background-size: contain;
+}
+
+.search {
+    position: relative;
+    max-width: 582px;
+    height: 40px;
+    margin: 40px auto;
+    /* 边框用阴影来取代 */
+    box-shadow: 0 0 0 1px #ccc;
+    border-radius: 20px;
+}
+
+.search>.icon-icon_search {
+    position: absolute;
+    left: 16px;
+    /* 实现垂直居中 */
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 16px;
+}
+
+.search>input {
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    padding: 0 40px;
+}
+
+.search>.icon-mic {
+    position: absolute;
+    right: 16px;
+    top: 12px;
+    color: #5484ed;
+    font-size: 18px;
+}
+
+.search:hover {
+    box-shadow: 0 0 4px 0px #ccc;
+}
+
+.buttons {
+    text-align: center;
+}
+
+.buttons>span {
+    display: inline-block;
+    background: #ccc;
+    font-size: 13px;
+    color: #666;
+    padding: 8px 12px;
+    margin: 16px 4px;
+    border-radius: 4px;
+}
+
+.buttons>span:hover {
+    background: #fff;
+}
